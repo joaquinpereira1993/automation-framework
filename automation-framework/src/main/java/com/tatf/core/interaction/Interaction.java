@@ -3,7 +3,7 @@ package com.tatf.core.interaction;
 import com.tatf.core.driver.instance.DriverManagerSingleton;
 import org.openqa.selenium.*;
 
-public class Interaction {
+public class  Interaction {
     private final WebDriver driver;
     private Alert alert;
 

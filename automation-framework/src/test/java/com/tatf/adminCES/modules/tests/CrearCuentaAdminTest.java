@@ -1,4 +1,4 @@
-package com.tatf.adminCES.modules.autenticacion.test;
+package com.tatf.adminCES.modules.tests;
 
 import com.tatf.adminCES.modules.configuracion.BaseTest;
 import com.tatf.adminCES.modules.gestionUsuarios.data.PerfilData;

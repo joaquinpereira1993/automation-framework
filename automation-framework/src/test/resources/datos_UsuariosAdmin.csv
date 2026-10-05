@@ -1,0 +1,4 @@
+Nombre,Apellido,Email,Contrasenia,RepetirContrasenia,Pais
+Joaquin,Pereira,JPereira.param1@test.com,123456,123456,Uruguay
+Romina,Fernandez,RFernandez.param2@test.com,1234567,1234567,Argentina
+Carlos,Rodriguez,CRodriguez.param3@test.com,12345678,12345678,Brasil

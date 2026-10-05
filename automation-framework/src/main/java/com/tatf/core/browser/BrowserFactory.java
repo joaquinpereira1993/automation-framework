@@ -19,7 +19,7 @@ public class BrowserFactory {
      * Arma un IBrowser listo para usar, con el driver correspondiente.
      *
      */
-    public static IBrowser getBrowser() {
+    public static IBrowser getBrowser(boolean b) {
         DriverType type = resolveDriverType();
         DriverManagerSingleton instance = DriverManagerSingleton.getInstance(type);
         return new BrowserImpl(instance, EXPLICIT_WAIT_DEFAULT_SECONDS, DEBUGGING);

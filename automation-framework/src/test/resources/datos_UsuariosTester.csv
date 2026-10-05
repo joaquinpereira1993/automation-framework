@@ -1,0 +1,4 @@
+Nombre,Apellido,Email,Pais,Contrasenia,Seniority
+Jose,Perez,jperez.param1@testing.com,Argentina,1234567,testerSenior
+Maria,Gomez,mgomez.param2@testing.com,Uruguay,1234567,testerJunior
+Carlos,Lopez,clopez.param3@testing.com,Paraguay,1234567,testerLead

@@ -30,8 +30,11 @@ public class CrearCuentaAdminTest extends BaseTest {
             resources = "/datos_UsuariosAdmin.csv",
             useHeadersInDisplayName = true
     )
+
     @DisplayName("Crea una cuenta de administrador y valida sus datos de perfil")
-    public void crearCuentaAdminTest(String nombre, String apellido, String email, String contrasenia, String repetirContrasenia, String pais) {
+     public void crearCuentaAdminTest(String nombre, String apellido, String email, String contrasenia, String repetirContrasenia, String pais) {
+        System.out.printf("Nombre: %s%n, Apellido: %s%n, Email: %s%n, Contrasenia: %s%n, RepetirContrasenia: %s%n, Pais: %s%n", nombre, apellido, email, contrasenia, repetirContrasenia, pais);
+
         this.acceso.ingresarAlSistema(url, hash);
         this.acceso.verificarUrl(url);
 

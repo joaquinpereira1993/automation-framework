@@ -23,4 +23,14 @@ public class LoginTask {
                 ModalData.TituloModalExito, "No se mostró el mensaje de confirmación de ingreso exitoso.",
                 ModalData.SubtituloSesionIniciada, "El subtítulo del mensaje de confirmación de ingreso no coincide.");
     }
+
+    public void inicioDeSesionInavalidoYVerificar(String email, String contrasenia) {
+        this.login.clicEnlaceIniciarSesion();
+        this.login.ingresarEmail(email);
+        this.login.ingresarContrasenia(contrasenia);
+        this.login.clicIniciarSesion();
+        this.modal.verificarTituloYSubtituloYConfirmar(
+                ModalData.TituloModalExito, "No se mostró el mensaje de confirmación de ingreso exitoso.",
+                ModalData.SubtituloSesionIniciada, "El subtítulo del mensaje de confirmación de ingreso no coincide.");
+    }
 }

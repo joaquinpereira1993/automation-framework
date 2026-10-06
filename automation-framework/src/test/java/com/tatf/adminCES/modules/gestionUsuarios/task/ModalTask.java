@@ -11,12 +11,6 @@ public class ModalTask {
         this.modal = new PaginaModalPO(browser);
     }
 
-    public void verificarTituloYConfirmar(String tituloEsperado, String mensajeError) {
-        this.modal.esperarModal();
-        IVerify.create().verify(tituloEsperado, this.modal.obtenerTitulo(), mensajeError);
-        this.modal.clicConfirmar();
-    }
-
     public void verificarTituloYSubtituloYConfirmar(String tituloEsperado, String mensajeErrorTitulo, String subtituloEsperado, String mensajeErrorSubtitulo) {
         this.modal.esperarModal();
         IVerify.create().verify(tituloEsperado, this.modal.obtenerTitulo(), mensajeErrorTitulo);
@@ -29,9 +23,5 @@ public class ModalTask {
         IVerify.create().verify(tituloEsperado, this.modal.obtenerTitulo(), mensajeErrorTitulo);
         IVerify.create().verify(subtituloEsperado, this.modal.obtenerSubtitulo(), mensajeErrorSubtitulo);
         this.modal.clicSi();
-    }
-
-    public void confirmar() {
-        this.modal.clicConfirmar();
     }
 }

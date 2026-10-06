@@ -33,6 +33,8 @@ public class ReiniciarContraseniaTest extends BaseTest {
     )
     @DisplayName("Reinicia la contraseña de un administrador y valida iniciando sesión con la nueva")
     public void reiniciarContraseniaTest(String contraseniaNueva, String repetirContraseniaNueva) {
+        System.out.printf("ContraseniaNueva: %s%n, RepetirContraseniaNueva: %s%n", contraseniaNueva, repetirContraseniaNueva);
+
         this.acceso.ingresarAlSistema(url, hash);
         this.acceso.verificarUrl(url);
 

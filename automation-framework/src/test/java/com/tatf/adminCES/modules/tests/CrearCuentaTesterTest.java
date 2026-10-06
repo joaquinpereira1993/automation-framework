@@ -32,6 +32,8 @@ public class  CrearCuentaTesterTest extends BaseTest {
     )
     @DisplayName("Crea una cuenta con perfil tester y valida que exista en la lista de usuarios")
     public void crearCuentaTesterTest(String nombre, String apellido, String email, String pais, String contrasenia, String seniority) {
+        System.out.printf("Nombre: %s%n, Apellido. %s%n, Email: %s%n, Pais: %s%n, Contrasenia: %s%n, Seniority: %s%n",nombre, apellido, email, pais, contrasenia, seniority);
+
         this.acceso.ingresarAlSistema(url, hash);
         this.acceso.verificarUrl(url);
 

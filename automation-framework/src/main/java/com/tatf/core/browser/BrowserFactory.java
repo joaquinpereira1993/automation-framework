@@ -17,19 +17,20 @@ public class BrowserFactory {
 
     /**
      * Arma un IBrowser listo para usar, con el driver correspondiente.
-     *
      */
-    public static IBrowser getBrowser() {
+    public static IBrowser getBrowser(boolean b) {
         DriverType type = resolveDriverType();
         DriverManagerSingleton instance = DriverManagerSingleton.getInstance(type);
         return new BrowserImpl(instance, EXPLICIT_WAIT_DEFAULT_SECONDS, DEBUGGING);
     }
 
     /**
-     * Lee el browser a usar desde la propiedad del sistema "browser" (CHROME por defecto).
+     * Lee el browser a usar desde la propiedad del sistema "browser";
+     * si no fue especificada, usa el valor de config.properties.
      */
     private static DriverType resolveDriverType() {
-        return DriverType.valueOf(DRIVER_TYPE.toUpperCase());
+        String tipo = System.getProperty("browser", DRIVER_TYPE);
+        return DriverType.valueOf(tipo.toUpperCase());
     }
 
     /**

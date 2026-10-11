@@ -5,7 +5,7 @@ import java.io.InputStream;
 import java.io.UncheckedIOException;
 import java.nio.charset.StandardCharsets;
 
-public class ResourceLoader {
+public class   ResourceLoader {
     /**
      * Clase de solo métodos estáticos, no se instancia.
      */
